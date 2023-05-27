@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CubeController : MonoBehaviour
@@ -17,15 +15,14 @@ public class CubeController : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             // Add to score when the player hits a cube
-            GameController.score++;
+            GameController.playerScore++;
             // Destroy the cube
             Destroy(gameObject);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        else if (collision.gameObject.tag == "NPC")
+        {
+            GameController.npcScore--;
+            Destroy(gameObject);
+        }
     }
 }

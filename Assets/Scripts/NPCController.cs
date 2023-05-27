@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCController : MonoBehaviour
@@ -16,6 +14,7 @@ public class NPCController : MonoBehaviour
     void Update()
     {
         // Implement Simple AI to Move towards the player
-       
+        Vector3 direction = (playerTransform.position - transform.position).normalized;
+        transform.Translate(direction * speed * Time.deltaTime);
     }
 }
