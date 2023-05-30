@@ -1,3 +1,5 @@
+using System;
+
 public class Character
 {
     public string health;  // Set this value to "High" or "Low"
@@ -13,5 +15,18 @@ public class Character
     {
         // Implement the decision tree here. Use if...else statements.
         // Print the decision with Console.WriteLine()
+        if (enemy_distance == "Close")
+        {
+            if (health == "Low")
+            {
+                Console.WriteLine("Retreat");
+                return;
+            }
+            
+        }
+        else 
+        {
+            Console.WriteLine("Defend");
+        }
     }
 }
