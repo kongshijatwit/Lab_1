@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1600
     height: 817
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 116
+  controlID: 80
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 123
+  controlID: 50
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 0
-  controlID: 175
+  controlID: 81
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,7 +227,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: MyLayout
+  m_LastLoadedLayoutName: 
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -324,14 +324,14 @@ MonoBehaviour:
   m_StartGridSize: 48
   m_LastFolders: []
   m_LastFoldersGridSize: 48
-  m_LastProjectPath: C:\Users\kongshij\Documents\GitHub\Lab_1
+  m_LastProjectPath: C:\Users\kongshij\Documents\GitHub\Lab-1\Lab_1
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 7e6d0000
     m_LastClickedID: 28030
-    m_ExpandedIDs: 00000000fe570000
+    m_ExpandedIDs: 00000000da570000dc570000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -359,7 +359,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000fe57000008580000
+    m_ExpandedIDs: ffffffff00000000da570000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -491,7 +491,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 3cc9fefffadafeffc8dcfeffd2f8feff4ef9feff8a00ffffe024ffffe86fffff967cffff8480ffff9880ffffa084ffffd49affff7e9bffff489dffffce9ffffff6a1ffff90a9ffff78bcffffc2befffff4c5ffff64caffffa0f4ffffe4f4ffffc8f5ffff4ef7ffff20fbffff2afbffff3afbfffff4ffffffb89d000022a40000f2aa000074ab0000e6b000002eba00007eba000054ca00005eca000004d10000
+      m_ExpandedIDs: 38fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -741,9 +741,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.15117645, y: 0, z: 0.15299892}
+    m_Target: {x: -2.1393871, y: -0.19558144, z: 2.8125248}
     speed: 2
-    m_Value: {x: -0.15117645, y: 0, z: 0.15299892}
+    m_Value: {x: -2.1393871, y: -0.19558144, z: 2.8125248}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -790,9 +790,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08843342, y: 0.8973387, z: -0.20992571, w: -0.3780134}
+    m_Target: {x: -0.11215163, y: 0.8529698, z: -0.2049515, w: -0.46675405}
     speed: 2
-    m_Value: {x: -0.08843342, y: 0.8973387, z: -0.20992571, w: -0.3780134}
+    m_Value: {x: -0.11215163, y: 0.8529698, z: -0.2049515, w: -0.46675405}
   m_Size:
     m_Target: 9.12025
     speed: 2
