@@ -1,4 +1,4 @@
-using System;
+using UnityEngine;
 
 public class Character
 {
@@ -19,14 +19,18 @@ public class Character
         {
             if (health == "Low")
             {
-                Console.WriteLine("Retreat");
+                Debug.Log("Retreat");
                 return;
             }
-            
         }
-        else 
+        else if (enemy_distance == "Far")
         {
-            Console.WriteLine("Defend");
+            if (health == "Low" || health == "High")
+            {
+                Debug.Log("Attack");
+                return;
+            }
         }
+        Debug.Log("Defend");
     }
 }
