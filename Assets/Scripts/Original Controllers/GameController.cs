@@ -41,4 +41,9 @@ public class GameController: MonoBehaviour
         GUI.Label(new Rect(10, 10, 200, 50), "Player Score: " + playerScore, scoreStyle);
         GUI.Label(new Rect(10, 50, 200, 50), "NPC Score: " + npcScore, scoreStyle);
     }
+
+    public void OnCubeGrabbed()
+    {
+        npcScore--;
+    }
 }

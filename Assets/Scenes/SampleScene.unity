@@ -259,7 +259,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -441,7 +441,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1402388389
 GameObject:
@@ -455,8 +455,9 @@ GameObject:
   - component: {fileID: 1402388392}
   - component: {fileID: 1402388391}
   - component: {fileID: 1402388390}
-  - component: {fileID: 1402388394}
   - component: {fileID: 1402388395}
+  - component: {fileID: 1402388394}
+  - component: {fileID: 1402388396}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -540,7 +541,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1402388394
 MonoBehaviour:
@@ -549,7 +550,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402388389}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bc3c7d2219004e49a3631279744d2a5, type: 3}
   m_Name: 
@@ -570,6 +571,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1402388396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402388389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d32be4c3aca58947a6493ccc55fecc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1557026623
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,8 +595,8 @@ GameObject:
   - component: {fileID: 1557026626}
   - component: {fileID: 1557026625}
   - component: {fileID: 1557026624}
-  - component: {fileID: 1557026628}
   - component: {fileID: 1557026629}
+  - component: {fileID: 1557026628}
   m_Layer: 0
   m_Name: Character
   m_TagString: NPC
@@ -668,7 +681,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1557026628
 MonoBehaviour:
@@ -712,7 +725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -765,7 +778,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6398176026623727554, guid: 0be301cff7703d04b873c814700fa8e6, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6398176026623727554, guid: 0be301cff7703d04b873c814700fa8e6, type: 3}
       propertyPath: m_LocalPosition.x
