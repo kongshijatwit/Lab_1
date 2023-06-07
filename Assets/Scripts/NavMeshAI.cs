@@ -1,25 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class NavMeshAI : MonoBehaviour
 {
     private NavMeshAgent agent;
-    public Transform target;
     public Transform cube;
 
-    // Start is called before the first frame update
+    public Transform[] waypointArray;
+    public int waypointIndex = 0;
+    private Vector3 cubePos;
+
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        agent.SetDestination(target.position);
+        agent.SetDestination(waypointArray[0].position);
+        cubePos = new Vector3(cube.position.x, 0, cube.position.z);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // agent.SetDestination(target.position);
-        // agent.SetDestination(cube.position);
+        Vector3 currPos = new Vector3(transform.position.x, 0, transform.position.z);
+        Vector3 waypointPos = new Vector3(waypointArray[waypointIndex].position.x, 0, waypointArray[waypointIndex].position.z);
+        if (currPos == waypointPos && currPos != cubePos) agent.SetDestination(SetNextDest());
+    }
+
+    private Vector3 SetNextDest()
+    {
+        waypointIndex = Random.Range(0, waypointArray.Length);
+        return waypointArray[waypointIndex].position;
     }
 }
