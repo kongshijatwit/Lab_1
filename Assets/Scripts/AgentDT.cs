@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AgentDT : MonoBehaviour
@@ -27,6 +25,6 @@ public class AgentDT : MonoBehaviour
             direction = (player.transform.position - transform.position).normalized;
         }
 
-        transform.Translate(direction * speed * Time.deltaTime);
+        transform.Translate(direction * speed * Time.deltaTime, Space.World);
     }
 }
