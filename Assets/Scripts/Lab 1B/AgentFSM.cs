@@ -18,6 +18,7 @@ public class AgentFSM : MonoBehaviour
         float distanceFromAgent = (agent1.position - transform.position).magnitude;
         float playerTargetDistance = (player.position - target.position).magnitude;
 
+        // Player is closer to agent than the cube && agent1 is far away
         if (distanceFromPlayer < playerTargetDistance && distanceFromAgent > agent1DistanceThreshold)
         {
             currentState = State.CHASEPLAYER;
