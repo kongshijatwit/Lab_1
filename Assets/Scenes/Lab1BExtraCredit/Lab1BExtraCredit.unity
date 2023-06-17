@@ -489,7 +489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408711643}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.55, y: 0.75, z: -7.19}
+  m_LocalPosition: {x: -7.52, y: 0.75, z: -9.44}
   m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -943,6 +943,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846f7c025aeec7d45b1c74f2117653f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 1
+  patrolList:
+  - {x: 8, y: 1, z: 8}
+  - {x: -8, y: 1, z: 8}
+  - {x: 8, y: 1, z: -8}
   player: {fileID: 408711644}
   cube: {fileID: 32663364}
 --- !u!54 &1210506396
@@ -1033,7 +1038,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210506394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.18, y: 1, z: 6}
+  m_LocalPosition: {x: 7.62, y: 1, z: 8.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

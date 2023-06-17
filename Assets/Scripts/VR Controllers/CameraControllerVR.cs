@@ -8,6 +8,6 @@ public class CameraControllerVR : MonoBehaviour
     {
         //Vector2 input = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick);
         float input = 1f;
-        transform.RotateAround(Vector3.zero, Vector3.up, input * rotationSpeed * Time.deltaTime);
+        //transform.RotateAround(Vector3.zero, Vector3.up, input * rotationSpeed * Time.deltaTime);
     }
 }
