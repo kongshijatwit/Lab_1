@@ -34,23 +34,23 @@ public class AgentFSM : MonoBehaviour
         switch (currentState)
         {
             case State.CHASEPLAYER:
-                Chase(player, false);
+                Chase(player, true);
                 break;
             
             case State.CHASETARGET:
-                Chase(target, false);
+                Chase(target, true);
                 break;
             
             case State.FLEE:
-                Chase(agent1, true);
+                Chase(agent1, false);
                 break;
         }
     }
 
-    private void Chase(Transform target, bool isFleeing)
+    private void Chase(Transform target, bool towards)
     {
         Vector3 direction = (target.position - transform.position).normalized;
-        if (isFleeing) direction *= -1;
+        if (!towards) direction *= -1;
         transform.Translate(direction * speed * Time.deltaTime, Space.World);
     }
 }

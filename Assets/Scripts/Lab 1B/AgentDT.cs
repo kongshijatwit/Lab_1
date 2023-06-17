@@ -2,27 +2,36 @@ using UnityEngine;
 
 public class AgentDT : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject target;
-    public float speed = 5f;
+    public Transform player;
+    public Transform target;
+    private Cube targetStatus;
+
+    private float speed = 5f;
     public float playerDistanceThreshold = 5f;
     public float targetDistanceThreshold = 3f;
 
-    void Update()
+    private void Start() 
+    {
+        targetStatus = target.GetComponent<Cube>();
+    }
+
+    private void Update()
     {
         Vector3 direction = Vector3.zero;
+        float distanceFromPlayer = (player.position - transform.position).magnitude;
+        float distanceFromTarget = (target.position - transform.position).magnitude;
 
-        if ((target.transform.position - transform.position).magnitude < targetDistanceThreshold)
+        if (distanceFromTarget < targetDistanceThreshold)
         {
-            target.GetComponent<Cube>().setIsActive(true);
+            targetStatus.setIsActive(true);
         }
-        if (target.GetComponent<Cube>().getIsActive() && (player.transform.position - transform.position).magnitude < playerDistanceThreshold)
+        if (targetStatus.getIsActive() && distanceFromPlayer < playerDistanceThreshold)
         {
-            direction = -(player.transform.position - transform.position).normalized;
+            direction = -(player.position - transform.position).normalized;
         }
-        if (!target.GetComponent<Cube>().getIsActive() || (player.transform.position - transform.position).magnitude > playerDistanceThreshold)
+        if (!targetStatus.getIsActive() || distanceFromPlayer > playerDistanceThreshold)
         {
-            direction = (player.transform.position - transform.position).normalized;
+            direction = (player.position - transform.position).normalized;
         }
 
         transform.Translate(direction * speed * Time.deltaTime, Space.World);
