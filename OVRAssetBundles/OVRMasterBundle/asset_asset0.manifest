@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 1428642697
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a991b59c71190c15709fc8e8e439ff26
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 410571ec3b2ffea48e2739c9247bf005
+HashAppended: 0
+ClassTypes:
+- Class: 238
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Scenes/Lab1BExtraCredit/NavMesh.asset
+Dependencies: []

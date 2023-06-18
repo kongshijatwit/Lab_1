@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 212231230
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: asset_resources
+      Dependencies: {}
+    Info_1:
+      Name: scene_lab1bdecisionmaking
+      Dependencies:
+        Dependency_0: asset_mat0
+        Dependency_1: asset_prefab0
+    Info_2:
+      Name: scene_lab1bextracredit
+      Dependencies:
+        Dependency_0: asset_mat0
+        Dependency_1: asset_prefab0
+        Dependency_2: asset_asset0
+    Info_3:
+      Name: asset_mat0
+      Dependencies: {}
+    Info_4:
+      Name: asset_prefab0
+      Dependencies: {}
+    Info_5:
+      Name: asset_asset0
+      Dependencies: {}

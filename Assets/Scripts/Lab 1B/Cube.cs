@@ -1,10 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
-    public bool isActivated = false;
+    [SerializeField] private bool isActivated = false;  // Serialized for debugging ONLY
+
+    private void Update()
+    {
+        if (OVRInput.GetDown(OVRInput.Button.One) || Input.GetKeyDown(KeyCode.Space))
+        {
+            isActivated = !isActivated;
+        }
+        GetComponent<MeshRenderer>().material.color = isActivated ? Color.red : Color.yellow;
+    }
 
     public bool getIsActive()
     {

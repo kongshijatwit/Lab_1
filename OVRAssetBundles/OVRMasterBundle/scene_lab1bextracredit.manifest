@@ -1,0 +1,78 @@
+ManifestFileVersion: 0
+CRC: 1674547877
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6e903f1741ccef9dae7e8772753b8641
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2f6f2f7e96c2ce754564197b41be58c6
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7e933e81d3c20c74ea6fdc708a67e3a5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2d32be4c3aca58947a6493ccc55fecc9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: df9f338034892c44ebb62d97894772f1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5178bc8574ce2bf4388e787a2e2af326, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b93a936a8e8dc744b82caa2502ffc5ab, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0c2d91565b60cdb4eafbcf664847159f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 254e9cc736bcfab44b64aa9da519c5af, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 846f7c025aeec7d45b1c74f2117653f0, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+- Class: 195
+  Script: {instanceID: 0}
+- Class: 196
+  Script: {instanceID: 0}
+- Class: 238
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Scenes/Lab1BExtraCredit/Lab1BExtraCredit.unity
+Dependencies:
+- C:/Users/kongshij/Documents/GitHub/AI for Gaming Labs/Lab_1/OVRAssetBundles/OVRMasterBundle/asset_asset0
+- C:/Users/kongshij/Documents/GitHub/AI for Gaming Labs/Lab_1/OVRAssetBundles/OVRMasterBundle/asset_mat0
+- C:/Users/kongshij/Documents/GitHub/AI for Gaming Labs/Lab_1/OVRAssetBundles/OVRMasterBundle/asset_prefab0
